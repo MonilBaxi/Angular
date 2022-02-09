@@ -1,0 +1,19 @@
+<p *ngIf="show then ifBlock else elseBlock">condition works!</p>
+<ng-template #ifBlock>
+    Hii Bro Show me your Moves!
+</ng-template>
+<ng-template #elseBlock>
+    Hii Bro show me your moves!
+</ng-template>
+
+<ng-template [ngIf]="tell==='red'">
+    <h1 [style]="{color:'red'}">red</h1>
+</ng-template>
+
+<ng-template [ngIf]="tell==='green'">
+    <h1 [style]="{color:'green'}">green</h1>
+</ng-template>
+
+<ng-template [ngIf]="tell==='blue'">
+    <h1 [style]="{color:'blue'}">blue</h1>
+</ng-template>

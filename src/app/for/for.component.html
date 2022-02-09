@@ -1,0 +1,17 @@
+<p>for works!</p>
+<ul>
+    <li *ngFor="let item of items">
+        <td>{{item}}</td>
+    </li>
+</ul>
+
+<table [style]="border:'1px solid black'">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr *ngFor="let data of userData">
+        <td>{{data.name}}</td>
+        <td>{{data.age}}</td>
+    </tr>
+</table>
