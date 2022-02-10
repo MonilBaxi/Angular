@@ -11,5 +11,5 @@ export class InterpolationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  name="Monil Baxi"
+  name="Monil Baxi";
 }

@@ -1,0 +1,6 @@
+<p>form works!</p>
+<form #simpleForm="ngForm" (ngSubmit)="getData(simpleForm.value)">
+    <input type="text" name="Name" ngModel placeholder="Enter your Name" >
+    <input type="email" name="Email" ngModel placeholder="Enter your Email" >
+    <button>Submit</button>
+</form>

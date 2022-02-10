@@ -1,0 +1,13 @@
+<br>
+<input type="text" id="add" name="Add" placeholder="Enter Item " #Add/>
+<button (click)="addItem(Add.value)">Add Item</button>
+<br>
+<div *ngIf="list.length!=0">
+    <h5>Your Items :</h5>
+    <ul>
+        <li *ngFor="let items of list; let i=index">
+            {{items}}<button (click)="removeItem(i)">Remove</button>
+        </li>
+    </ul>
+</div>
+
