@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,12 @@ import { ParentChildComponent } from './parent-child/parent-child.component';
 import { ChildComponent } from './parent-child/child/child.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipe } from './pipes/custom_pipe/custom.pipe';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ValidatorsComponent } from './validators/validators.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { BlueElDirective } from './directives/blue-el.directive';
+import { UsersComponent } from './users/users.component';
+import { ErrorComponent } from './error/error.component';
 
 
 @NgModule({
@@ -51,6 +58,12 @@ import { CustomPipe } from './pipes/custom_pipe/custom.pipe';
     ChildComponent,
     PipesComponent,
     CustomPipe,
+    ReactiveFormComponent,
+    ValidatorsComponent,
+    DirectivesComponent,
+    BlueElDirective,
+    UsersComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,7 +72,8 @@ import { CustomPipe } from './pipes/custom_pipe/custom.pipe';
     FlexLayoutModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

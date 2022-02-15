@@ -1,0 +1,8 @@
+<form [formGroup]="login" (ngSubmit)="Data()" >
+    <br>
+    <input type="text" name="user"  formControlName="user"/><br>
+    <span *ngIf="user&&user.invalid&&user.touched">This field is invalid</span><br>
+    <input type="password" name="password"  formControlName="password"/> <br>
+    <span *ngIf="password&&password.invalid&&password.touched">Invalid Password</span><br>
+    <button [disabled]="login.invalid">Submit</button>
+</form>
