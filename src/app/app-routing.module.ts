@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutChildComponent } from './about/about-child/about-child.component';
+import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { ToggleComponent } from './toggle/toggle.component';
@@ -12,7 +14,13 @@ const routes: Routes = [
   },
   {
     path:'about',
-    component:ToggleComponent
+    component:AboutComponent,
+    children:[
+      {
+        path:'aboutme',
+        component:AboutChildComponent
+      }
+    ]
   },
   {
     path:'user/:id',

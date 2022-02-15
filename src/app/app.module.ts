@@ -34,6 +34,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { BlueElDirective } from './directives/blue-el.directive';
 import { UsersComponent } from './users/users.component';
 import { ErrorComponent } from './error/error.component';
+import { AboutComponent } from './about/about.component';
+import { AboutChildComponent } from './about/about-child/about-child.component';
 
 
 @NgModule({
@@ -64,6 +66,8 @@ import { ErrorComponent } from './error/error.component';
     BlueElDirective,
     UsersComponent,
     ErrorComponent,
+    AboutComponent,
+    AboutChildComponent,
   ],
   imports: [
     BrowserModule,
