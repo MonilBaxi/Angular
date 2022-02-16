@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,6 +37,8 @@ import { UsersComponent } from './users/users.component';
 import { ErrorComponent } from './error/error.component';
 import { AboutComponent } from './about/about.component';
 import { AboutChildComponent } from './about/about-child/about-child.component';
+import { UseServiceComponent } from './use-service/use-service.component';
+
 
 
 @NgModule({
@@ -68,6 +71,8 @@ import { AboutChildComponent } from './about/about-child/about-child.component';
     ErrorComponent,
     AboutComponent,
     AboutChildComponent,
+    UseServiceComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -77,7 +82,8 @@ import { AboutChildComponent } from './about/about-child/about-child.component';
     NgbModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
