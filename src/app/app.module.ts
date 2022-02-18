@@ -4,6 +4,7 @@ import {FormsModule} from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { AdminModule } from './admin/admin.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,8 +39,8 @@ import { ErrorComponent } from './error/error.component';
 import { AboutComponent } from './about/about.component';
 import { AboutChildComponent } from './about/about-child/about-child.component';
 import { UseServiceComponent } from './use-service/use-service.component';
-
-
+import { UserlistComponent } from './userlist/userlist.component';
+import { AdminlistComponent } from './adminlist/adminlist.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,8 @@ import { UseServiceComponent } from './use-service/use-service.component';
     AboutComponent,
     AboutChildComponent,
     UseServiceComponent,
+    UserlistComponent,
+    AdminlistComponent,
     
   ],
   imports: [
@@ -83,7 +86,8 @@ import { UseServiceComponent } from './use-service/use-service.component';
     BrowserAnimationsModule,
     MatSliderModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

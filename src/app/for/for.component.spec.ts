@@ -22,4 +22,9 @@ describe('ForComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it("should contain for works!",()=>{
+    const collection = fixture.nativeElement;
+    expect(collection.querySelector('.p').textContent).toContain('for works!');
+  })
 });
